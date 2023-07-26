@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-xWguDlvoMJw7GkrKvPg8UYEXdkfZ9XJZ7B+SGq3KdGjqvnajhFQzqbJx/vt+8RjK0oPYX2OZjhxRUrsO/6JAzg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<title>Kedeboxd</title>
+
+	<style>
+		* {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    
+    body {
+      background-color: #000000b0;
+      font-family: Arial, sans-serif; color:#ffffff;
+    }
+
+		#sidebar {
+			position: fixed;
+			top: 0;
+			left: 0;
+			height: 100%;
+			width: 150px;
+			background-color: rgba(0, 0, 0, 0.281);
+			color: #fff;
+			padding: 20px;
+      		display: flex;
+      		flex-direction: column;
+      		justify-content: flex-start;
+			align-items: flex-end;
+			gap: 20px;
+		}
+
+		#sidebar h1 {
+			font-size: 1.5em;
+			margin-top: 0;
+			display: flex;
+      		flex-direction: column;
+      		justify-content: flex-end;
+			align-items: flex-end;
+			gap: 20px;
+		}
+
+		.search-bar {
+			background-color: rgba(0, 0, 0, 0.281);
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 50px;
+		  }
+		  
+		.search-bar form {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100%;
+		}
+		  
+		.search-bar input[type="text"] {
+			width: 300px;
+			height: 30px;
+			border-radius: 20px;
+			border: none;
+			padding: 10px;
+			margin-right: 10px;
+		}
+		  
+		.search-bar button[type="submit"] {
+			background-color: #00ff228c;
+			color: white;
+			border: none;
+			border-radius: 20px;
+			height: 30px;
+			padding: 0 20px;
+			cursor: pointer;
+		}
+
+		.container {
+			margin: 100px auto 0;
+			width: 80%;
+			height: 300px;
+			background-color: #00ff228c;
+			box-shadow: 0 0 10px rgba(0,0,0,0.3);
+			text-align: center;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			gap: 15px;
+		}
+
+		.container:nth-of-type(1) {
+			background-color: #00ff228c;
+		}
+
+		.container:nth-of-type(2) {
+			background-color: #00ff228c;
+		}
+
+		.container:nth-of-type(3) {
+			background-color: #00ff228c;
+		}
+
+		.container h2 {
+			font-size: 2em;
+			margin-top: 0;
+		}
+
+		.link {
+			color: #ffffff;
+			display: block;
+			font-size: 0.9em;
+			margin-top: 10px;
+			text-align: left;
+			text-decoration: none;
+			align-self: flex-end;
+		}
+	</style>
+</head>
+<body>
+	<div id="sidebar">
+		<h1>Receboxd</h1>
+		<ul>
+			<li><a class="link" href="perfil.html">Perfil</a></li>
+			<li><a class="link" href="loginpage.html">Sair</a></li>
+		</ul>
+	</div>
+
+	<div class="search-bar">
+		<form>
+		  	<input type="text" placeholder="Pesquisar...">
+		  	<button type="submit">Buscar</button>
+		</form>
+	</div>
+
+	<div class="container">
+		<h2>Brasil 0 - 0 Argentina</h2>
+		<p>DATA:</p>
+		<p> 10/04 - 20:30</p>
+	</div>
+
+	<div class="container">
+		<h2>Japao 1 - 2 França</h2>
+		<p>DATA:</p>
+		<p> 09/04 - 12:00</p>
+	</div>
+
+	<div class="container">
+		<h2>Alemanha 1 - 2 Portugal</h2>
+		<p>DATA:</p>
+		<p> 29/03 - 15:00</p>
+		<p> Terminado</p>
+	</div>
+
+	<div class="container">
+		<h2>Servia 0 - 3 Espanha</h2>
+		<p>DATA:</p>
+		<p> 27/03 - 14:00</p>
+		<p> Terminado</p>
+	</div>
+	  
+	<script src ="telainicial.js"></script>
+</body>
+</html>
